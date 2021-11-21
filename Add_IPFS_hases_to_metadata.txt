@@ -1,0 +1,14 @@
+with open("traits2.json", 'r') as f:
+    traits = json.load(f)
+with open("newhashes.json", 'r') as f:
+    hashes = json.load(f)
+
+
+for key in hashes:
+    i = int(hashes[key])
+    print(key, ":", hashes[key])
+    traits[i]["imageIPFS"] = key 
+
+
+with open('finaltraits.json', 'w') as outfile:
+    json.dump(traits, outfile, indent=4)
