@@ -2,15 +2,19 @@
 Complete guide to NFTs
 
 Install Python Pillow
+
     pip install pillow
 
 Install Python display
+
     pip install display
 
 Install Jupyter Notebook
+
     pip install jupyter 
 
 Run Jupyter in your nft-image-generator folder
+
     jupyter notebook
 
 Run the commands in [generate.ipynb] to generate images.
